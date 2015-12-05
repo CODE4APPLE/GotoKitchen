@@ -10,19 +10,17 @@
 #import "FirstRowTableViewCell.h"
 #import "SecondRowTableViewCell.h"
 #import "FifthTableViewCell.h"
-
-static NSString * const kFirstCellID = @"kFirstCellID";
-static CGFloat const kFirstCellHeight = 110.0f;
-
-static NSString * const kSecondCellID = @"kSecondCellID";
-static CGFloat const kSecondCellHeight = 80.0f;
-
-static NSString * const kFifthCellID = @"kFifthCellID";
-static CGFloat const kFifthCellHeight = 250.0f;
+#import "RecipeInfo+Request.h"
+#import "NSObject+YYModel.h"
+#import "RecipeIssue.h"
+#import "HomepageCellManager.h"
+#import "Template1Cell.h"
+#import "Template2Cell.h"
+#import "Template4Cell.h"
 
 @interface HomeTableViewController ()
 {
-    
+    RecipeInfo *info;
 }
 
 @end
@@ -32,8 +30,18 @@ static CGFloat const kFifthCellHeight = 250.0f;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tableView registerNib:[UINib nibWithNibName:@"Template1Cell" bundle:nil] forCellReuseIdentifier:kTemplate1CellID];
+    [self.tableView registerNib:[UINib nibWithNibName:@"Template2Cell" bundle:nil] forCellReuseIdentifier:kTemplate2CellID];
+    [self.tableView registerNib:[UINib nibWithNibName:@"Template4Cell" bundle:nil] forCellReuseIdentifier:kTemplate4CellID];
+    [self.tableView registerNib:[UINib nibWithNibName:@"FifthTableViewCell" bundle:nil] forCellReuseIdentifier:kTemplate5CellID];
     self.tableView.tableFooterView = [[UIView alloc] init];
    
+    [RecipeInfo fetchRecipeWithCompletionBlock:^(id returnValue) {
+        info = [RecipeInfo yy_modelWithDictionary:returnValue];
+        [self.tableView reloadData];
+    } WithFailureBlock:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,33 +53,29 @@ static CGFloat const kFifthCellHeight = 250.0f;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
+    return info.issues.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 2;
+    RecipeIssue *issue = info.issues[section];
+    return issue.items.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        FirstRowTableViewCell *firstCell = [tableView dequeueReusableCellWithIdentifier:kFirstCellID];
-        return firstCell;
-    }else{
-        SecondRowTableViewCell *secondCell = [tableView dequeueReusableCellWithIdentifier:kSecondCellID];
-        return secondCell;
-    }
+    RecipeIssue *issue = info.issues[indexPath.section];
+    RecipeItem *item = issue.items[indexPath.row];
+    NSString *cellID = [HomepageCellManager cellIDOfReicpeItem:item];
+    
+    UITableViewCell *cell = [HomepageCellManager cellOfCellID:cellID withTableView:tableView withItem:item];
+    return cell;
 
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0) {
-        return kFirstCellHeight;
-    }else
-    {
-        return kSecondCellHeight;
-    }
+    RecipeIssue *issue = info.issues[indexPath.section];
+    return [HomepageCellManager heightOfReicpeItem:issue.items[indexPath.row]];
     
 }
 

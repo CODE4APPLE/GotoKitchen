@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403856101C12624800CB5C03 /* Template2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4038560E1C12624800CB5C03 /* Template2Cell.m */; };
+		403856111C12624800CB5C03 /* Template2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4038560F1C12624800CB5C03 /* Template2Cell.xib */; };
+		403856151C12630800CB5C03 /* Template4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 403856131C12630800CB5C03 /* Template4Cell.m */; };
+		403856161C12630800CB5C03 /* Template4Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403856141C12630800CB5C03 /* Template4Cell.xib */; };
+		409F24261C11CC77001D8404 /* RecipeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F24251C11CC77001D8404 /* RecipeImage.m */; };
+		409F24291C11CD98001D8404 /* RecipeAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F24281C11CD98001D8404 /* RecipeAuthor.m */; };
+		409F242C1C11CE4B001D8404 /* RecipeContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F242B1C11CE4B001D8404 /* RecipeContents.m */; };
+		409F242F1C11CF07001D8404 /* RecipeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F242E1C11CF07001D8404 /* RecipeItem.m */; };
+		409F24321C11CFBD001D8404 /* RecipeIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F24311C11CFBD001D8404 /* RecipeIssue.m */; };
+		409F24391C11D555001D8404 /* RecipeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F24381C11D555001D8404 /* RecipeInfo.m */; };
+		409F243C1C11D5AE001D8404 /* RecipeInfo+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F243B1C11D5AE001D8404 /* RecipeInfo+Request.m */; };
+		409F243F1C11D7B1001D8404 /* HomepageCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F243E1C11D7B1001D8404 /* HomepageCellManager.m */; };
+		409F24421C11DF9F001D8404 /* Template1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 409F24411C11DF9F001D8404 /* Template1Cell.m */; };
+		409F24441C11E021001D8404 /* Template1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409F24431C11E021001D8404 /* Template1Cell.xib */; };
 		40BD2B981C05E511004AE2CA /* UIColor+themeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2B971C05E511004AE2CA /* UIColor+themeColor.m */; };
 		40BD2B9B1C05EB7A004AE2CA /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2B9A1C05EB7A004AE2CA /* HomeTableViewController.m */; };
 		40BD2B9E1C05EBA5004AE2CA /* FirstRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2B9D1C05EBA5004AE2CA /* FirstRowTableViewCell.m */; };
 		40BD2BA11C05EF97004AE2CA /* SecondRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2BA01C05EF97004AE2CA /* SecondRowTableViewCell.m */; };
 		40BD2BA41C05F14D004AE2CA /* ThirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2BA31C05F14D004AE2CA /* ThirdTableViewCell.m */; };
 		40BD2BA71C05F156004AE2CA /* FourthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2BA61C05F156004AE2CA /* FourthTableViewCell.m */; };
-		40BD2BAC1C05F4E7004AE2CA /* HomePageRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2BAB1C05F4E7004AE2CA /* HomePageRecipe.m */; };
 		40BD2BAF1C05F6C3004AE2CA /* FifthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2BAE1C05F6C3004AE2CA /* FifthTableViewCell.m */; };
 		40BD2BB11C05F854004AE2CA /* FifthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40BD2BB01C05F854004AE2CA /* FifthTableViewCell.xib */; };
 		D2CFB5F81C05DDF5001C6BC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFB5F71C05DDF5001C6BC4 /* main.m */; };
@@ -45,6 +58,32 @@
 
 /* Begin PBXFileReference section */
 		131DCD4378D74D2965BD7E84 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4038560D1C12624800CB5C03 /* Template2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Template2Cell.h; sourceTree = "<group>"; };
+		4038560E1C12624800CB5C03 /* Template2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Template2Cell.m; sourceTree = "<group>"; };
+		4038560F1C12624800CB5C03 /* Template2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Template2Cell.xib; sourceTree = "<group>"; };
+		403856121C12630800CB5C03 /* Template4Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Template4Cell.h; sourceTree = "<group>"; };
+		403856131C12630800CB5C03 /* Template4Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Template4Cell.m; sourceTree = "<group>"; };
+		403856141C12630800CB5C03 /* Template4Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Template4Cell.xib; sourceTree = "<group>"; };
+		409F24241C11CC77001D8404 /* RecipeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeImage.h; sourceTree = "<group>"; };
+		409F24251C11CC77001D8404 /* RecipeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeImage.m; sourceTree = "<group>"; };
+		409F24271C11CD98001D8404 /* RecipeAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeAuthor.h; sourceTree = "<group>"; };
+		409F24281C11CD98001D8404 /* RecipeAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeAuthor.m; sourceTree = "<group>"; };
+		409F242A1C11CE4B001D8404 /* RecipeContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeContents.h; sourceTree = "<group>"; };
+		409F242B1C11CE4B001D8404 /* RecipeContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeContents.m; sourceTree = "<group>"; };
+		409F242D1C11CF07001D8404 /* RecipeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeItem.h; sourceTree = "<group>"; };
+		409F242E1C11CF07001D8404 /* RecipeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeItem.m; sourceTree = "<group>"; };
+		409F24301C11CFBD001D8404 /* RecipeIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeIssue.h; sourceTree = "<group>"; };
+		409F24311C11CFBD001D8404 /* RecipeIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeIssue.m; sourceTree = "<group>"; };
+		409F24361C11D39C001D8404 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		409F24371C11D555001D8404 /* RecipeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeInfo.h; sourceTree = "<group>"; };
+		409F24381C11D555001D8404 /* RecipeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeInfo.m; sourceTree = "<group>"; };
+		409F243A1C11D5AE001D8404 /* RecipeInfo+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecipeInfo+Request.h"; sourceTree = "<group>"; };
+		409F243B1C11D5AE001D8404 /* RecipeInfo+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RecipeInfo+Request.m"; sourceTree = "<group>"; };
+		409F243D1C11D7B1001D8404 /* HomepageCellManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageCellManager.h; sourceTree = "<group>"; };
+		409F243E1C11D7B1001D8404 /* HomepageCellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageCellManager.m; sourceTree = "<group>"; };
+		409F24401C11DF9F001D8404 /* Template1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Template1Cell.h; sourceTree = "<group>"; };
+		409F24411C11DF9F001D8404 /* Template1Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Template1Cell.m; sourceTree = "<group>"; };
+		409F24431C11E021001D8404 /* Template1Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Template1Cell.xib; sourceTree = "<group>"; };
 		40BD2B961C05E511004AE2CA /* UIColor+themeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+themeColor.h"; sourceTree = "<group>"; };
 		40BD2B971C05E511004AE2CA /* UIColor+themeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+themeColor.m"; sourceTree = "<group>"; };
 		40BD2B991C05EB7A004AE2CA /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
@@ -57,8 +96,6 @@
 		40BD2BA31C05F14D004AE2CA /* ThirdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTableViewCell.m; sourceTree = "<group>"; };
 		40BD2BA51C05F156004AE2CA /* FourthTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthTableViewCell.h; sourceTree = "<group>"; };
 		40BD2BA61C05F156004AE2CA /* FourthTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthTableViewCell.m; sourceTree = "<group>"; };
-		40BD2BAA1C05F4E7004AE2CA /* HomePageRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageRecipe.h; sourceTree = "<group>"; };
-		40BD2BAB1C05F4E7004AE2CA /* HomePageRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageRecipe.m; sourceTree = "<group>"; };
 		40BD2BAD1C05F6C3004AE2CA /* FifthTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthTableViewCell.h; sourceTree = "<group>"; };
 		40BD2BAE1C05F6C3004AE2CA /* FifthTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthTableViewCell.m; sourceTree = "<group>"; };
 		40BD2BB01C05F854004AE2CA /* FifthTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FifthTableViewCell.xib; sourceTree = "<group>"; };
@@ -129,6 +166,15 @@
 				40BD2BAD1C05F6C3004AE2CA /* FifthTableViewCell.h */,
 				40BD2BAE1C05F6C3004AE2CA /* FifthTableViewCell.m */,
 				40BD2BB01C05F854004AE2CA /* FifthTableViewCell.xib */,
+				409F24401C11DF9F001D8404 /* Template1Cell.h */,
+				409F24411C11DF9F001D8404 /* Template1Cell.m */,
+				409F24431C11E021001D8404 /* Template1Cell.xib */,
+				4038560D1C12624800CB5C03 /* Template2Cell.h */,
+				4038560E1C12624800CB5C03 /* Template2Cell.m */,
+				4038560F1C12624800CB5C03 /* Template2Cell.xib */,
+				403856121C12630800CB5C03 /* Template4Cell.h */,
+				403856131C12630800CB5C03 /* Template4Cell.m */,
+				403856141C12630800CB5C03 /* Template4Cell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -154,6 +200,9 @@
 		40BD2B931C05E4EF004AE2CA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				409F24361C11D39C001D8404 /* Config.h */,
+				409F243D1C11D7B1001D8404 /* HomepageCellManager.h */,
+				409F243E1C11D7B1001D8404 /* HomepageCellManager.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -175,6 +224,8 @@
 		40BD2BA81C05F361004AE2CA /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				409F243A1C11D5AE001D8404 /* RecipeInfo+Request.h */,
+				409F243B1C11D5AE001D8404 /* RecipeInfo+Request.m */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -182,8 +233,18 @@
 		40BD2BA91C05F4CE004AE2CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				40BD2BAA1C05F4E7004AE2CA /* HomePageRecipe.h */,
-				40BD2BAB1C05F4E7004AE2CA /* HomePageRecipe.m */,
+				409F24241C11CC77001D8404 /* RecipeImage.h */,
+				409F24251C11CC77001D8404 /* RecipeImage.m */,
+				409F24271C11CD98001D8404 /* RecipeAuthor.h */,
+				409F24281C11CD98001D8404 /* RecipeAuthor.m */,
+				409F242A1C11CE4B001D8404 /* RecipeContents.h */,
+				409F242B1C11CE4B001D8404 /* RecipeContents.m */,
+				409F242D1C11CF07001D8404 /* RecipeItem.h */,
+				409F242E1C11CF07001D8404 /* RecipeItem.m */,
+				409F24301C11CFBD001D8404 /* RecipeIssue.h */,
+				409F24311C11CFBD001D8404 /* RecipeIssue.m */,
+				409F24371C11D555001D8404 /* RecipeInfo.h */,
+				409F24381C11D555001D8404 /* RecipeInfo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,6 +347,7 @@
 				D2CFB5F01C05DDF5001C6BC4 /* Frameworks */,
 				D2CFB5F11C05DDF5001C6BC4 /* Resources */,
 				79C4B769EB57ECC359E8A7A1 /* Copy Pods Resources */,
+				C3339BB58463257239B93DAD /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,6 +445,9 @@
 				D2CFB6031C05DDF5001C6BC4 /* Assets.xcassets in Resources */,
 				D2CFB6011C05DDF5001C6BC4 /* Main.storyboard in Resources */,
 				40BD2BB11C05F854004AE2CA /* FifthTableViewCell.xib in Resources */,
+				403856111C12624800CB5C03 /* Template2Cell.xib in Resources */,
+				403856161C12630800CB5C03 /* Template4Cell.xib in Resources */,
+				409F24441C11E021001D8404 /* Template1Cell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +498,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C3339BB58463257239B93DAD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -442,13 +522,23 @@
 			files = (
 				40BD2B9B1C05EB7A004AE2CA /* HomeTableViewController.m in Sources */,
 				40BD2B981C05E511004AE2CA /* UIColor+themeColor.m in Sources */,
-				40BD2BAC1C05F4E7004AE2CA /* HomePageRecipe.m in Sources */,
+				409F242C1C11CE4B001D8404 /* RecipeContents.m in Sources */,
 				40BD2B9E1C05EBA5004AE2CA /* FirstRowTableViewCell.m in Sources */,
+				409F243C1C11D5AE001D8404 /* RecipeInfo+Request.m in Sources */,
+				409F24291C11CD98001D8404 /* RecipeAuthor.m in Sources */,
 				40BD2BA71C05F156004AE2CA /* FourthTableViewCell.m in Sources */,
+				403856101C12624800CB5C03 /* Template2Cell.m in Sources */,
+				409F24321C11CFBD001D8404 /* RecipeIssue.m in Sources */,
 				D2CFB5FB1C05DDF5001C6BC4 /* AppDelegate.m in Sources */,
+				409F24421C11DF9F001D8404 /* Template1Cell.m in Sources */,
 				40BD2BA11C05EF97004AE2CA /* SecondRowTableViewCell.m in Sources */,
 				D2CFB5F81C05DDF5001C6BC4 /* main.m in Sources */,
+				409F24391C11D555001D8404 /* RecipeInfo.m in Sources */,
+				403856151C12630800CB5C03 /* Template4Cell.m in Sources */,
 				40BD2BA41C05F14D004AE2CA /* ThirdTableViewCell.m in Sources */,
+				409F243F1C11D7B1001D8404 /* HomepageCellManager.m in Sources */,
+				409F242F1C11CF07001D8404 /* RecipeItem.m in Sources */,
+				409F24261C11CC77001D8404 /* RecipeImage.m in Sources */,
 				40BD2BAF1C05F6C3004AE2CA /* FifthTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CoderAlexande.xiachufang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -605,6 +696,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CoderAlexande.xiachufang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

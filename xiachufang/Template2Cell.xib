@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kTemplate2CellID" id="KGk-i7-Jjw" customClass="Template2Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d67-v8-3rH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-ml-ykk">
+                        <rect key="frame" x="139" y="79" width="42" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-Xa-xFw">
+                        <rect key="frame" x="142.5" y="108" width="35.5" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="cdy-Xa-xFw" firstAttribute="centerX" secondItem="9mU-ml-ykk" secondAttribute="centerX" id="0SZ-4I-20Z"/>
+                    <constraint firstItem="cdy-Xa-xFw" firstAttribute="top" secondItem="9mU-ml-ykk" secondAttribute="bottom" constant="8" id="G9e-Zo-JaQ"/>
+                    <constraint firstItem="9mU-ml-ykk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Qp9-ld-OFJ"/>
+                    <constraint firstAttribute="bottom" secondItem="d67-v8-3rH" secondAttribute="bottom" id="ZWp-Vu-vnh"/>
+                    <constraint firstItem="d67-v8-3rH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="c5L-Kp-Tda"/>
+                    <constraint firstItem="d67-v8-3rH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="go1-7e-Zie"/>
+                    <constraint firstAttribute="trailing" secondItem="d67-v8-3rH" secondAttribute="trailing" id="jaa-tC-esC"/>
+                    <constraint firstItem="9mU-ml-ykk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-20" id="xZ9-Gy-xVg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="recipeFirstLabel" destination="9mU-ml-ykk" id="gIC-1d-S0B"/>
+                <outlet property="recipeImageView" destination="d67-v8-3rH" id="oap-sO-nrz"/>
+                <outlet property="recipeSecondLabel" destination="cdy-Xa-xFw" id="Q60-Jr-yzc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

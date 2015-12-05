@@ -7,11 +7,7 @@
 //
 
 #import "FifthTableViewCell.h"
-
-static CGFloat const kImageViewAndTitleLabelPadding = 10.0f;
-static CGFloat const kTitleLabelAndSummaryLabelPadding = 10.0f;
-static CGFloat const kSummaryLabelAndBottomViewPadding = 10.0f;
-static CGFloat const kRecieImageViewHeight = 190.0f;
+#import "YYWebImage.h"
 
 @implementation FifthTableViewCell
 
@@ -25,10 +21,13 @@ static CGFloat const kRecieImageViewHeight = 190.0f;
     // Configure the view for the selected state
 }
 
-+ (CGFloat)calculateCellHeightWithRecipeModel:(HomePageRecipe *)recipe
+- (void)template5CellBindRecipeItem:(RecipeItem *)item
 {
-  
-    return 0;
+    self.recipeImageView.yy_imageURL = [NSURL URLWithString:item.contents.image.url];
+    self.recipeTitleLabel.text = item.contents.title;
+    self.recipeSummaryLabel.text = item.contents.desc;
+    self.userAvatarImageView.yy_imageURL = [NSURL URLWithString:item.contents.author.photoURL];
+    self.countLabel.text = [NSString stringWithFormat:@"%ld人做过",(long)item.contents.n_cooked];
 }
 
 @end

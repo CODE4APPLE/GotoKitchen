@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HomePageRecipe.h"
+#import "RecipeItem.h"
 
 @interface FifthTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *userAvatarImageView;
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;
 
-+ (CGFloat)calculateCellHeightWithRecipeModel:(HomePageRecipe *)recipe;
+- (void)template5CellBindRecipeItem:(RecipeItem *)item;
 
 @end
