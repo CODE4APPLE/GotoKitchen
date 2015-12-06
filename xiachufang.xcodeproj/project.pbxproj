@@ -405,6 +405,7 @@
 				TargetAttributes = {
 					D2CFB5F21C05DDF5001C6BC4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2259TAFXMX;
 					};
 					D2CFB60B1C05DDF6001C6BC4 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -679,10 +680,13 @@
 			baseConfigurationReference = 7CEFCBA74E977978D96E4474 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = xiachufang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoderAlexande.xiachufang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zangqilong.xiachufang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
@@ -692,10 +696,13 @@
 			baseConfigurationReference = 6D317F44A60691258AFD0426 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = xiachufang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoderAlexande.xiachufang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zangqilong.xiachufang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;

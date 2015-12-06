@@ -51,25 +51,25 @@ NSString * const kTemplate5CellID = @"kTemplate5CellID";
                     withTableView:(UITableView *)tableView
                          withItem:(RecipeItem *)item
 {
-    if (cellID == kTemplate1CellID) {
+    if ([cellID isEqualToString: kTemplate1CellID]) {
         Template1Cell *cell = (Template1Cell *)[tableView dequeueReusableCellWithIdentifier:cellID];
         [cell template1CellBindRecipeItem:item];
         return cell;
     }
     
-    if (cellID == kTemplate2CellID) {
+    if ([cellID isEqualToString: kTemplate2CellID]) {
         Template2Cell *cell = (Template2Cell *)[tableView dequeueReusableCellWithIdentifier:cellID];
         [cell template2CellBindRecipeItem:item];
         return cell;
     }
     
-    if (cellID == kTemplate4CellID) {
+    if ([cellID isEqualToString: kTemplate4CellID]) {
         Template4Cell *cell = (Template4Cell *)[tableView dequeueReusableCellWithIdentifier:cellID];
         [cell template4CellBindRecipeItem:item];
         return cell;
     }
     
-    if (cellID == kTemplate5CellID) {
+    if ([cellID isEqualToString: kTemplate5CellID]) {
         FifthTableViewCell *cell = (FifthTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellID];
         [cell template5CellBindRecipeItem:item];
         return cell;
