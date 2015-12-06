@@ -7,6 +7,8 @@
 //
 
 #import "FirstRowTableViewCell.h"
+#import "HomePageNavContent.h"
+#import "YYWebImage.h"
 
 @implementation FirstRowTableViewCell
 
@@ -18,6 +20,11 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)firstRowCellBindRecipeItem:(HomePageNavContent *)item
+{
+    self.leftImageView.yy_imageURL = [NSURL URLWithString:item.pop_recipe_picurl];
 }
 
 @end

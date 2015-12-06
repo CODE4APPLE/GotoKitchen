@@ -29,6 +29,10 @@
 		40BD2BA71C05F156004AE2CA /* FourthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2BA61C05F156004AE2CA /* FourthTableViewCell.m */; };
 		40BD2BAF1C05F6C3004AE2CA /* FifthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BD2BAE1C05F6C3004AE2CA /* FifthTableViewCell.m */; };
 		40BD2BB11C05F854004AE2CA /* FifthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40BD2BB01C05F854004AE2CA /* FifthTableViewCell.xib */; };
+		40ED2DE31C146AB00080D1FE /* TestXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ED2DE21C146AB00080D1FE /* TestXib.xib */; };
+		40ED2DE61C146D0A0080D1FE /* HomePageNavModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED2DE51C146D0A0080D1FE /* HomePageNavModel.m */; };
+		40ED2DE91C146D4A0080D1FE /* HomePageNavContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED2DE81C146D4A0080D1FE /* HomePageNavContent.m */; };
+		40ED2DEC1C146E010080D1FE /* HomePageNavContent+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED2DEB1C146E010080D1FE /* HomePageNavContent+Request.m */; };
 		D2CFB5F81C05DDF5001C6BC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFB5F71C05DDF5001C6BC4 /* main.m */; };
 		D2CFB5FB1C05DDF5001C6BC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFB5FA1C05DDF5001C6BC4 /* AppDelegate.m */; };
 		D2CFB6011C05DDF5001C6BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CFB5FF1C05DDF5001C6BC4 /* Main.storyboard */; };
@@ -99,6 +103,13 @@
 		40BD2BAD1C05F6C3004AE2CA /* FifthTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthTableViewCell.h; sourceTree = "<group>"; };
 		40BD2BAE1C05F6C3004AE2CA /* FifthTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthTableViewCell.m; sourceTree = "<group>"; };
 		40BD2BB01C05F854004AE2CA /* FifthTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FifthTableViewCell.xib; sourceTree = "<group>"; };
+		40ED2DE21C146AB00080D1FE /* TestXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXib.xib; sourceTree = "<group>"; };
+		40ED2DE41C146D0A0080D1FE /* HomePageNavModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageNavModel.h; sourceTree = "<group>"; };
+		40ED2DE51C146D0A0080D1FE /* HomePageNavModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageNavModel.m; sourceTree = "<group>"; };
+		40ED2DE71C146D4A0080D1FE /* HomePageNavContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageNavContent.h; sourceTree = "<group>"; };
+		40ED2DE81C146D4A0080D1FE /* HomePageNavContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageNavContent.m; sourceTree = "<group>"; };
+		40ED2DEA1C146E010080D1FE /* HomePageNavContent+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomePageNavContent+Request.h"; sourceTree = "<group>"; };
+		40ED2DEB1C146E010080D1FE /* HomePageNavContent+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomePageNavContent+Request.m"; sourceTree = "<group>"; };
 		6D317F44A60691258AFD0426 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7CEFCBA74E977978D96E4474 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D2CFB5F31C05DDF5001C6BC4 /* xiachufang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiachufang.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +186,7 @@
 				403856121C12630800CB5C03 /* Template4Cell.h */,
 				403856131C12630800CB5C03 /* Template4Cell.m */,
 				403856141C12630800CB5C03 /* Template4Cell.xib */,
+				40ED2DE21C146AB00080D1FE /* TestXib.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -226,6 +238,8 @@
 			children = (
 				409F243A1C11D5AE001D8404 /* RecipeInfo+Request.h */,
 				409F243B1C11D5AE001D8404 /* RecipeInfo+Request.m */,
+				40ED2DEA1C146E010080D1FE /* HomePageNavContent+Request.h */,
+				40ED2DEB1C146E010080D1FE /* HomePageNavContent+Request.m */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -245,6 +259,10 @@
 				409F24311C11CFBD001D8404 /* RecipeIssue.m */,
 				409F24371C11D555001D8404 /* RecipeInfo.h */,
 				409F24381C11D555001D8404 /* RecipeInfo.m */,
+				40ED2DE41C146D0A0080D1FE /* HomePageNavModel.h */,
+				40ED2DE51C146D0A0080D1FE /* HomePageNavModel.m */,
+				40ED2DE71C146D4A0080D1FE /* HomePageNavContent.h */,
+				40ED2DE81C146D4A0080D1FE /* HomePageNavContent.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -449,6 +467,7 @@
 				403856111C12624800CB5C03 /* Template2Cell.xib in Resources */,
 				403856161C12630800CB5C03 /* Template4Cell.xib in Resources */,
 				409F24441C11E021001D8404 /* Template1Cell.xib in Resources */,
+				40ED2DE31C146AB00080D1FE /* TestXib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,12 +545,15 @@
 				409F242C1C11CE4B001D8404 /* RecipeContents.m in Sources */,
 				40BD2B9E1C05EBA5004AE2CA /* FirstRowTableViewCell.m in Sources */,
 				409F243C1C11D5AE001D8404 /* RecipeInfo+Request.m in Sources */,
+				40ED2DEC1C146E010080D1FE /* HomePageNavContent+Request.m in Sources */,
+				40ED2DE91C146D4A0080D1FE /* HomePageNavContent.m in Sources */,
 				409F24291C11CD98001D8404 /* RecipeAuthor.m in Sources */,
 				40BD2BA71C05F156004AE2CA /* FourthTableViewCell.m in Sources */,
 				403856101C12624800CB5C03 /* Template2Cell.m in Sources */,
 				409F24321C11CFBD001D8404 /* RecipeIssue.m in Sources */,
 				D2CFB5FB1C05DDF5001C6BC4 /* AppDelegate.m in Sources */,
 				409F24421C11DF9F001D8404 /* Template1Cell.m in Sources */,
+				40ED2DE61C146D0A0080D1FE /* HomePageNavModel.m in Sources */,
 				40BD2BA11C05EF97004AE2CA /* SecondRowTableViewCell.m in Sources */,
 				D2CFB5F81C05DDF5001C6BC4 /* main.m in Sources */,
 				409F24391C11D555001D8404 /* RecipeInfo.m in Sources */,

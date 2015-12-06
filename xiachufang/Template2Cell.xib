@@ -51,6 +51,7 @@
                 <outlet property="recipeImageView" destination="d67-v8-3rH" id="oap-sO-nrz"/>
                 <outlet property="recipeSecondLabel" destination="cdy-Xa-xFw" id="Q60-Jr-yzc"/>
             </connections>
+            <point key="canvasLocation" x="23" y="213"/>
         </tableViewCell>
     </objects>
 </document>

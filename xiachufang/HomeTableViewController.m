@@ -17,10 +17,15 @@
 #import "Template1Cell.h"
 #import "Template2Cell.h"
 #import "Template4Cell.h"
+#import "HomePageNavContent+Request.h"
+#import "HomePageNavModel.h"
 
 @interface HomeTableViewController ()
 {
     RecipeInfo *info;
+    HomePageNavContent *navContent;
+    
+    NSMutableArray *cellHeightArray;
 }
 
 @end
@@ -35,13 +40,28 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"Template4Cell" bundle:nil] forCellReuseIdentifier:kTemplate4CellID];
     [self.tableView registerNib:[UINib nibWithNibName:@"FifthTableViewCell" bundle:nil] forCellReuseIdentifier:kTemplate5CellID];
     self.tableView.tableFooterView = [[UIView alloc] init];
-   
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
     [RecipeInfo fetchRecipeWithCompletionBlock:^(id returnValue) {
         info = [RecipeInfo yy_modelWithDictionary:returnValue];
-        [self.tableView reloadData];
+        dispatch_group_leave(group);
     } WithFailureBlock:^(NSError *error) {
-        
+        dispatch_group_leave(group);
     }];
+    
+    dispatch_group_enter(group);
+    [HomePageNavContent fetchNavContentWithCompletionBlock:^(id returnValue) {
+        navContent = [HomePageNavContent yy_modelWithDictionary:returnValue];
+        dispatch_group_leave(group);
+    } WithFailureBlock:^(NSError *error) {
+        dispatch_group_leave(group);
+    }];
+
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,29 +73,52 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return info.issues.count;
+    return info.issues.count + 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    RecipeIssue *issue = info.issues[section];
-    return issue.items.count;
+    if (section == 0) {
+        return 2;
+    }else
+    {
+        RecipeIssue *issue = info.issues[section-1];
+        return issue.items.count;
+    }
+    
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    RecipeIssue *issue = info.issues[indexPath.section];
-    RecipeItem *item = issue.items[indexPath.row];
-    NSString *cellID = [HomepageCellManager cellIDOfReicpeItem:item];
+    if (indexPath.section == 0) {
+        UITableViewCell *cell = [HomepageCellManager cellOfCellID:kFirstCellID withTableView:tableView withItem:navContent withIndexPath:indexPath];
+        return cell;
+    }else
+    {
+        RecipeIssue *issue = info.issues[indexPath.section-1];
+        RecipeItem *item = issue.items[indexPath.row];
+        NSString *cellID = [HomepageCellManager cellIDOfReicpeItem:item];
+        UITableViewCell *cell = [HomepageCellManager cellOfCellID:cellID withTableView:tableView withItem:item withIndexPath:indexPath];
+        return cell;
+    }
     
-    UITableViewCell *cell = [HomepageCellManager cellOfCellID:cellID withTableView:tableView withItem:item];
-    return cell;
-
+    return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    RecipeIssue *issue = info.issues[indexPath.section];
-    return [HomepageCellManager heightOfReicpeItem:issue.items[indexPath.row]];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            return 140;
+        }else
+        {
+            return 90;
+        }
+    }else
+    {
+        RecipeIssue *issue = info.issues[indexPath.section-1];
+        return [HomepageCellManager heightOfReicpeItem:issue.items[indexPath.row]];
+    }
+    
     
 }
 

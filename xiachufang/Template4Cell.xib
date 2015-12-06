@@ -41,6 +41,7 @@
                 <outlet property="recipeImageView" destination="u7b-z0-3PM" id="4FM-lR-tPY"/>
                 <outlet property="recipeWhisperLabel" destination="9ko-dj-xlh" id="WAV-n8-W8j"/>
             </connections>
+            <point key="canvasLocation" x="-90" y="281"/>
         </tableViewCell>
     </objects>
 </document>
